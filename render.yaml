@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: school-trailer-network-scraper
+    env: docker
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SCAN_WAIT_MS
+        value: 9000
